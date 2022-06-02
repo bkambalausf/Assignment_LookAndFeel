@@ -116,3 +116,129 @@ function updateFish() {
             break;
     }
 }
+
+function updateCoral() {
+    var sb = document.getElementById('coral');
+    switch (sb.selectedIndex) {
+        case 0:
+            document.getElementById('sizeInfo').innerHTML = "Size: 1/4\" - 2\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Bottom to Top of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Low to High";
+            document.getElementById('flowInfo').innerHTML = "Flow: Moderate to High";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Zooplankton and Phytoplankton";
+            document.getElementById('coralImage').src = "./img/zoa.jpg";
+            break;
+        case 1:
+            document.getElementById('sizeInfo').innerHTML = "Size: 1/4\" - 3\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Bottom to Middle of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Low to Moderate";
+            document.getElementById('flowInfo').innerHTML = "Flow: Low to Moderate";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Free floating fish/coral food";
+            document.getElementById('coralImage').src = "./img/mushroom.jpg";
+            break;
+        case 2:
+            document.getElementById('sizeInfo').innerHTML = "Size: 1\" - 10\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Bottom to Middle of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Moderate to High";
+            document.getElementById('flowInfo').innerHTML = "Flow: Moderate";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Phytoplankton";
+            document.getElementById('coralImage').src = "./img/toadstool.jpg";
+            break;
+        case 3:
+            document.getElementById('sizeInfo').innerHTML = "Size: 2\" - 7\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Bottom to Top of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Moderate to High";
+            document.getElementById('flowInfo').innerHTML = "Flow: Moderate to High";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Free floating fish/coral food, Zooplankton and Phytoplankton";
+            document.getElementById('coralImage').src = "./img/kenyatree.jpg";
+            break;
+        case 4:
+            document.getElementById('sizeInfo').innerHTML = "Size: 1\" - 4\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Bottom to Middle of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Low to Moderate";
+            document.getElementById('flowInfo').innerHTML = "Flow: Low to Moderate";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Zooplankton and Phytoplankton";
+            document.getElementById('coralImage').src = "./img/xenia.jpg";
+            break;
+        case 5:
+            document.getElementById('sizeInfo').innerHTML = "Size: 1/2\" - 1\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Bottom to Top of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Moderate to High";
+            document.getElementById('flowInfo').innerHTML = "Flow: Moderate to High";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Zooplankton and Phytoplankton";
+            document.getElementById('coralImage').src = "./img/gsp.jpg";
+            break;
+        case 6:
+            document.getElementById('sizeInfo').innerHTML = "Size: 1\" - 3\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Middle of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Moderate to High";
+            document.getElementById('flowInfo').innerHTML = "Flow: Moderate to High";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Free floating coral food";
+            document.getElementById('coralImage').src = "./img/frogspawn.jpg";
+            break;
+        case 7:
+            document.getElementById('sizeInfo').innerHTML = "Size: 2\" - 8\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Bottom to Middle of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Low to Moderate";
+            document.getElementById('flowInfo').innerHTML = "Flow: Low to Moderate";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Free floating fish/coral food";
+            document.getElementById('coralImage').src = "./img/bubble.jpg";
+            break;
+        case 8:
+            document.getElementById('sizeInfo').innerHTML = "Size: 1\" - 3\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Bottom to Middle of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Low to Moderate";
+            document.getElementById('flowInfo').innerHTML = "Flow: Moderate";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Zooplankton and Phytoplankton";
+            document.getElementById('coralImage').src = "./img/candycane.jpg";
+            break;
+        case 9:
+            document.getElementById('sizeInfo').innerHTML = "Size: 1\" - 3\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Bottom to Middle of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Low to Moderate";
+            document.getElementById('flowInfo').innerHTML = "Flow: Moderate";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Free floating coral food";
+            document.getElementById('coralImage').src = "./img/blasto.jpg";
+            break;
+        case 10:
+            document.getElementById('sizeInfo').innerHTML = "Size: 1\" - 7\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Bottom of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Moderate";
+            document.getElementById('flowInfo').innerHTML = "Flow: Moderate";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Zooplankton";
+            document.getElementById('coralImage').src = "./img/brain.jpg";
+            break;
+        case 11:
+            document.getElementById('sizeInfo').innerHTML = "Size: 1/2\" - 2\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Bottom to Middle of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Moderate to High";
+            document.getElementById('flowInfo').innerHTML = "Flow: Moderate";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Zooplankton";
+            document.getElementById('coralImage').src = "./img/ricordia.jpg";
+            break;
+        case 12:
+            document.getElementById('sizeInfo').innerHTML = "Size: 1/2\" - 2\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Middle of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Moderate to High";
+            document.getElementById('flowInfo').innerHTML = "Flow: High";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Free floating fish/coral food";
+            document.getElementById('coralImage').src = "./img/duncans.jpg";
+            break;
+        case 13:
+            document.getElementById('sizeInfo').innerHTML = "Size: 1/2\" - 8\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Middle to Top of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Moderate to High";
+            document.getElementById('flowInfo').innerHTML = "Flow: Moderate to High";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Free floating coral food, Zooplankton and Phytoplankton";
+            document.getElementById('coralImage').src = "./img/birdnest.jpg";
+            break;
+		case 14:
+            document.getElementById('sizeInfo').innerHTML = "Size: 1/2\" - 12\"";
+            document.getElementById('placementInfo').innerHTML = "Placement: Middle to Top of Tank";
+            document.getElementById('lightingInfo').innerHTML = "Lighting: Moderate to High";
+            document.getElementById('flowInfo').innerHTML = "Flow: Moderate to High";
+            document.getElementById('dietInfo').innerHTML = "Diet: Primary - Photosynthesis, Supplemental - Free floating coral food";
+            document.getElementById('coralImage').src = "./img/montipora.jpg";
+            break;
+    }
+}
