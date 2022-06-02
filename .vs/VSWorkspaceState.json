@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\img",
+    "\\js"
   ],
-  "SelectedNode": "\\C:\\Users\\kstic\\Source\\Repos\\kstichno\\Assignment_LookAndFeel",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }

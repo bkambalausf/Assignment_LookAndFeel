@@ -18,10 +18,39 @@
             <a href="./chemistry.html">Chemistry</a>
             <a href="./about.html">About</a>
         </div>
+        <div>
+            <h1>Introduction to Saltwater Fish</h1>
+            <form class="dropdown">
+                <label for="fish">Select a fish for additional infomation</label>
+                <select id="fish">
+                    <option value="1">Clownfish</option>
+                    <option value="2">Damselfish</option>
+                    <option value="3">Green Chromis</option>
+                    <option value="4">Bicolor Blenny</option>
+                    <option value="5">Clown Goby</option>
+                    <option value="6">Yellow Watchman Goby</option>
+                    <option value="7">Firefish Goby</option>
+                    <option value="8">Hawkfish</option>
+                    <option value="9">Diamond Goby</option>
+                    <option value="10">Six Line Wrasse</option>
+                    <option value="11">Royal Gramma</option>
+                    <option value="12">Coral Beauty Anglefish</option>
+                    <option value="13">Dottyback</option>
+                    <option value="14">Chalk Bass</option>
+                </select>
+                <button id="fishbtn" onclick="updateFish(); return false;">Get Info</button>
+                <br /> <br />
+                <img id="fishImage" src="./img/ocellaris-clownfish.jpg" />
+                <p id="quickInfo">Quick Info: Very hardy, easy to keep</p>
+                <p id="scientificInfo">Scientific Name: Amphiprioninae</p>    
+                <p id="tankInfo">Minimum Tank Size: 20 gallons</p>
+                <p id="dietInfo">Diet: Omnivore</p>
+                <p id="temperamentInfo">Temperament: Peaceful</p>
+            </form>
+            <script src="./js/main.js"></script>
+        </div>
         <div class="footer">Copyright © 2022, All rights reserved.</div>
     </div>
-        <!--JS link-->
-        <script src="./js/main.js"></script>
 </body>
 
 </html>
