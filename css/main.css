@@ -7,8 +7,6 @@ html {
 
 .container {
     background-color: #555555;
-    min-height: 100%;
-    min-width: 100%;
     left: 0;
 }
 
@@ -76,10 +74,9 @@ font-size: 17px;
 
 .about {
     position: absolute;
-    top: 5%;
+    top: 2%;
     left: 2%;
-    width: 98%;
-    height: 95%;
+    width: 50%;
     background-color: #555555;
     text-align: left;
     color: white;
@@ -92,8 +89,9 @@ font-size: 17px;
 
 .about h2 {
     position: static;
-    font-size: 25px;
+    font-size: 20px;
 }
+
 .footer {
     position: fixed;
     left: 0;
