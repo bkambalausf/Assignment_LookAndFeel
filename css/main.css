@@ -113,7 +113,7 @@ font-size: 17px;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 400px;
+        width: 400px !important;
     }
 
     .middle iframe {
@@ -133,7 +133,7 @@ font-size: 17px;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 500px;
+        width: 500px !important;
     }
 
     .middle iframe {
@@ -145,8 +145,6 @@ font-size: 17px;
     }
 }
 
-
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .dropdown canvas {
@@ -155,7 +153,7 @@ font-size: 17px;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 668px;
+        width: 668px !important;
     }
 
     .middle iframe {
@@ -175,7 +173,7 @@ font-size: 17px;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 892px;
+        width: 892px !important;
     }
 
     .middle iframe {
@@ -195,7 +193,7 @@ font-size: 17px;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 1100px;
+        width: 1100px !important;
     }
 
     .middle iframe {
@@ -215,7 +213,7 @@ font-size: 17px;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 1280px;
+        width: 1280px !important;
     }
 
     .middle iframe {
