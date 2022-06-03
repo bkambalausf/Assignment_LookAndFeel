@@ -21,7 +21,7 @@
         <form class="dropdown">
             <h1>Introduction to Chemistry</h1>
             <label for="chem">Pick a chemistry to see desired range</label>
-            <select id="chem">
+            <select id="chem" onchange="updateChart(0); return false;">
                 <option value="1">Specific Gravity</option>
                 <option value="2">Temperature</option>
                 <option value="3">pH</option>
@@ -33,13 +33,14 @@
                 <option value="9">Iodine</option>
                 <option value="10">Strontium</option>
             </select>
-            <button id="chembtn" onclick="updateChart(); return false;">Get Info</button>
+            <button id="chembtn" onclick="updateChart(-1); return false;">Previous</button>
+            <button id="nchembtn" onclick="updateChart(1); return false;">Next</button>
             <br /> <br />
             <canvas id="line-chart"></canvas>
         </form>
         <div class="footer">USF MSBAIS, 2022.</div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <script src="./js/chem.js"></script>
 </body>
 

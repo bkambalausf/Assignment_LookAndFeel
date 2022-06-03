@@ -1,6 +1,10 @@
 
-function updateChart() {
-    var sb = document.getElementById('chem');
+function updateChart(val) {
+    var sb = document.getElementById('chem'); var nIndex = sb.selectedIndex + val;
+    if (nIndex < 0 || nIndex >= sb.length) {
+        nIndex = 0;
+    }
+    sb.selectedIndex = nIndex;
     var min, max, units, title;
     switch (sb.selectedIndex) {
         case 0:
@@ -65,17 +69,14 @@ function updateChart() {
             break;
     }
 
-    var data = [];
+    var d = [];
     for (let i = 0; i < 7; i++) {
         var ran = Math.floor(Math.random() * 100) + 1;
-        data[i] = (min + ((max-min) * (ran/100.0)))
+        d[i] = (min + ((max-min) * (ran/100.0)))
     }
 
-    Chart.defaults.global.defaultFontColor = 'white';
-    new Chart(document.getElementById("line-chart"), {
-        type: 'line',
-        data: {
-            labels: ["12AM", "4AM", "8AM", "12PM", "4PM", "8PM", "12AM"],
+    chart.data = {
+        labels: ["12AM", "4AM", "8AM", "12PM", "4PM", "8PM", "12AM"],
             datasets: [{
                 data: [min, min, min, min, min, min, min],
                 label: "Lower Limit",
@@ -87,34 +88,80 @@ function updateChart() {
                 borderColor: "#c45850",
                 fill: false
             }, {
-                data: [data[0], data[1], data[2], data[3], data[4], data[5], data[6]],
+                data: [d[0], d[1], d[2], d[3], d[4], d[5], d[6]],
                 label: "Demo Values",
                 borderColor: "#3cba9f",
                 fill: false
             }
             ]
+    };
+
+    chart.options = {
+        title: {
+            display: true,
+            text: title
         },
-        options: {
-            title: {
-                display: true,
-                text: title
-            },
-            responsive: false,
-            scales: {
-                yAxes: [{
-                    scaleLabel: {
-                        display: true,
-                        labelString: units
-                    },
-                    ticks: {
-                        Min: min,
-                        Max: max
-                    }
-                }]
-            }  
+        responsive: false,
+        scales: {
+            yAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: units
+                },
+                ticks: {
+                    Min: min,
+                    Max: max
+                }
+            }]
         }
-    });    
+    };
+    chart.update();
+
 }
+
+Chart.defaults.global.defaultFontColor = 'white';
+var chart = new Chart(document.getElementById("line-chart"), {
+    type: 'line',
+    data: {
+        labels: ["12AM", "4AM", "8AM", "12PM", "4PM", "8PM", "12AM"],
+        datasets: [{
+            data: [1.023, 1.023, 1.023, 1.023, 1.023, 1.023, 1.023],
+            label: "Lower Limit",
+            borderColor: "#3e95cd",
+            fill: false,
+        }, {
+            data: [1.025, 1.025, 1.025, 1.025, 1.025, 1.025, 1.025],
+            label: "Upper Limit",
+            borderColor: "#c45850",
+            fill: false
+        }, {
+            data: [0, 0, 0, 0, 0, 0, 0],
+            label: "Demo Values",
+            borderColor: "#3cba9f",
+            fill: false
+        }
+        ]
+    },
+    options: {
+        title: {
+            display: true,
+            text: 'Specific Gravity'
+        },
+        responsive: false,
+        scales: {
+            yAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Specific Gravity'
+                },
+                ticks: {
+                    Min: 1.023,
+                    Max: 1.025
+                }
+            }]
+        }
+    }
+});
 
 window.onload = function () {
     document.getElementById("chembtn").click();

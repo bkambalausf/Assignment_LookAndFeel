@@ -18,11 +18,11 @@
             <a href="./chemistry.html">Chemistry</a>
             <a href="./about.html">About</a>
         </div>
-		<div>
+        <div>
             <form class="dropdown">
-	            <h1>Introduction to Coral</h1>
+                <h1>Introduction to Coral</h1>
                 <label for="coral">Pick a coral for more infomation</label>
-                <select id="coral">
+                <select id="coral" onchange="updateCoral(0); return false;">
                     <option value="1">Zoanthids</option>
                     <option value="2">Mushrooms</option>
                     <option value="3">Toadstool Leather</option>
@@ -32,22 +32,24 @@
                     <option value="7">Frogspawn</option>
                     <option value="8">Bubble</option>
                     <option value="9">Candy Cane</option>
-					<option value="10">Blastomussa</option>
+                    <option value="10">Blastomussa</option>
                     <option value="11">Brain</option>
                     <option value="12">Ricordia</option>
                     <option value="13">Duncans</option>
                     <option value="14">Birdnest</option>
                     <option value="15">Montipora</option>
                 </select>
-                <button id="coralbtn" onclick="updateCoral(); return false;">Get Info</button>
+                <button id="coralbtn" onclick="updateCoral(-1); return false;">Previous</button>
+                <button id="ncoralbtn" onclick="updateCoral(1); return false;">Next</button>
                 <br /> <br />
                 <img id="coralImage" src="./img/zoa.jpg" />
                 <p id="sizeInfo">Size: 1/4" - 2"</p>
-				<p id="placementInfo">Placement: Bottom to Top of Tank</p>
-                <p id="lightingInfo">Lighting: Low to High</p>    
+                <p id="placementInfo">Placement: Bottom to Top of Tank</p>
+                <p id="lightingInfo">Lighting: Low to High</p>
                 <p id="flowInfo">Flow: Moderate to High</p>
                 <p id="dietInfo">Diet: Primary - Photosynthesis, Supplemental - Zooplankton and Phytoplankton</p>
             </form>
+            <br /> <br />
             <script src="./js/main.js"></script>
         </div>
         <div class="footer">USF MSBAIS, 2022.</div>

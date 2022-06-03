@@ -19,8 +19,8 @@
             <a href="./about.html">About</a>
         </div>
         <div>
-            <form class="dropdown">
-	            <h1>Introduction to Saltwater Fish</h1>
+            <form class="dropdown" onchange="updateFish(0); return false;">
+                <h1>Introduction to Saltwater Fish</h1>
                 <label for="fish">Pick a fish for more infomation</label>
                 <select id="fish">
                     <option value="1">Clownfish</option>
@@ -38,15 +38,18 @@
                     <option value="13">Dottyback</option>
                     <option value="14">Chalk Bass</option>
                 </select>
-                <button id="fishbtn" onclick="updateFish(); return false;">Get Info</button>
+                <button id="fishbtn" onclick="updateFish(-1); return false;">Previous</button>
+                <button id="nfishbtn" onclick="updateFish(1); return false;">Next</button>
                 <br /> <br />
                 <img id="fishImage" src="./img/ocellaris-clownfish.jpg" />
                 <p id="quickInfo">Quick Info: Very hardy, easy to keep</p>
-                <p id="scientificInfo">Scientific Name: Amphiprioninae</p>    
+                <p id="scientificInfo">Scientific Name: Amphiprioninae</p>
                 <p id="tankInfo">Minimum Tank Size: 20 gallons</p>
                 <p id="dietInfo">Diet: Omnivore</p>
                 <p id="temperamentInfo">Temperament: Peaceful</p>
+                <br /> <br />
             </form>
+            
             <script src="./js/main.js"></script>
         </div>
         <div class="footer">USF MSBAIS, 2022.</div>

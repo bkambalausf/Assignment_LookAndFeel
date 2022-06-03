@@ -7,8 +7,6 @@ html {
 
 .container {
     background-color: #555555;
-    min-height: 100%;
-    min-width: 100%;
     left: 0;
 }
 
@@ -76,10 +74,9 @@ font-size: 17px;
 
 .about {
     position: absolute;
-    top: 5%;
+    top: 2%;
     left: 2%;
-    width: 98%;
-    height: 95%;
+    width: 50%;
     background-color: #555555;
     text-align: left;
     color: white;
@@ -92,8 +89,9 @@ font-size: 17px;
 
 .about h2 {
     position: static;
-    font-size: 25px;
+    font-size: 20px;
 }
+
 .footer {
     position: fixed;
     left: 0;
@@ -113,7 +111,7 @@ font-size: 17px;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 400px;
+        width: 400px !important;
     }
 
     .middle iframe {
@@ -133,7 +131,7 @@ font-size: 17px;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 500px;
+        width: 500px !important;
     }
 
     .middle iframe {
@@ -145,8 +143,6 @@ font-size: 17px;
     }
 }
 
-
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .dropdown canvas {
@@ -155,7 +151,7 @@ font-size: 17px;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 668px;
+        width: 668px !important;
     }
 
     .middle iframe {
@@ -175,7 +171,7 @@ font-size: 17px;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 892px;
+        width: 892px !important;
     }
 
     .middle iframe {
@@ -195,7 +191,7 @@ font-size: 17px;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 1100px;
+        width: 1100px !important;
     }
 
     .middle iframe {
@@ -215,7 +211,7 @@ font-size: 17px;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 1280px;
+        width: 1280px !important;
     }
 
     .middle iframe {
