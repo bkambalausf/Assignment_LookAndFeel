@@ -79,14 +79,12 @@ font-size: 17px;
     height: 95%;
     background-color: #555555;
     text-align: center;
+    color: white;
 }
 
 .middle h1 {
     position: static;
     font-size: 50px;
-    width: 100%;
-    color: white;
-    text-align: center;
 }
 
 .middle iframe {
@@ -94,9 +92,29 @@ font-size: 17px;
 	width: 60%;
     height: 73%;
     border: hidden;
-	//padding-top: 56.25%;
 }
 
+/* Position in the middle */
+.about {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: 98%;
+    height: 95%;
+    background-color: #555555;
+    text-align: left;
+    color: white;
+}
+
+.about h1 {
+    position: static;
+    font-size: 50px;
+}
+
+.about h2 {
+    position: static;
+    font-size: 25px;
+}
 .footer {
     position: fixed;
     left: 0;
