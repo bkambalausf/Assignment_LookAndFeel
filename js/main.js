@@ -1,6 +1,11 @@
 
-function updateFish() {
+function updateFish(val) {
     var sb = document.getElementById('fish');
+    var nIndex = sb.selectedIndex + val;
+    if (nIndex < 0 || nIndex >= sb.length) {
+        nIndex = 0;
+    }
+    sb.selectedIndex = nIndex;
     switch (sb.selectedIndex) {
         case 0:
             document.getElementById('quickInfo').innerHTML = "Quick Info: Very hardy, easy to keep";
@@ -117,8 +122,13 @@ function updateFish() {
     }
 }
 
-function updateCoral() {
+function updateCoral(val) {
     var sb = document.getElementById('coral');
+    var nIndex = sb.selectedIndex + val;
+    if (nIndex < 0 || nIndex >= sb.length) {
+        nIndex = 0;
+    }
+    sb.selectedIndex = nIndex;
     switch (sb.selectedIndex) {
         case 0:
             document.getElementById('sizeInfo').innerHTML = "Size: 1/4\" - 2\"";

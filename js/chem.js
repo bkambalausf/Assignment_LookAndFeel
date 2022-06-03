@@ -1,6 +1,10 @@
 
-function updateChart() {
-    var sb = document.getElementById('chem');
+function updateChart(val) {
+    var sb = document.getElementById('chem'); var nIndex = sb.selectedIndex + val;
+    if (nIndex < 0 || nIndex >= sb.length) {
+        nIndex = 0;
+    }
+    sb.selectedIndex = nIndex;
     var min, max, units, title;
     switch (sb.selectedIndex) {
         case 0:
