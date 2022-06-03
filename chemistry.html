@@ -18,11 +18,29 @@
             <a class="active" href="./chemistry.html">Chemistry</a>
             <a href="./about.html">About</a>
         </div>
-        <div class="footer">Copyright © 2022, All rights reserved.</div>
+        <form class="dropdown">
+            <h1>Introduction to Chemisty</h1>
+            <label for="chem">Select a chemisty to see desired range</label>
+            <select id="chem">
+                <option value="1">Specific Gravity</option>
+                <option value="2">Temperature</option>
+                <option value="3">pH</option>
+                <option value="4">Alkalinity</option>
+                <option value="5">Nitrite</option>
+                <option value="6">Phosphate</option>
+                <option value="7">Calcium</option>
+                <option value="8">Magnesium</option>
+                <option value="9">Iodine</option>
+                <option value="10">Strontium</option>
+            </select>
+            <button id="chembtn" onclick="updateChart(); return false;">Get Info</button>
+            <br /> <br />
+            <canvas id="line-chart"></canvas>
+        </form>
+        <div class="footer">USF MSBAIS, 2022.</div>
     </div>
-
-    <!--JS link-->
-    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="./js/chem.js"></script>
 </body>
 
 </html>
