@@ -19,7 +19,8 @@
             <a class="active" href="./about.html">About</a>
         </div>
         <div class="about">
-            <img src= "./img/Deep-Sea-Background.jpg"   /> 
+	  <img id="Deep-Sea-Background" src="./img/Deep-Sea-Background.jpg" />
+                
              
             <h1>About Aquarium Guide</h1>
             <h2>Content</h2>
